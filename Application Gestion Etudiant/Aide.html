@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universite LousteRold</title>
+    <link rel="stylesheet" href="styleD'aide.css">
+</head>
+ <button class="btn-retour" onclick="window.location.href='acceuil.html'">X</button>
+<body class="forme">
+ <h1>Contenu Complet pour la Page d’Aide - Université Lousterold</h1>
+<strong> Accueil (Page d’accueil)</strong>
+<ul>
+    <li><p>Objectif : Page d’entrée pour tous les visiteurs du site.
+
+Éléments visibles :
+
+Logo officiel de l’université (en haut à gauche).
+
+Barre de navigation (Accueil, À propos, Déconnexion, Administrateur).
+
+Champ de recherche (non fonctionnel pour l’instant).
+Bouton pour changer le mode clair / sombre.
+
+Slider d’images de l’université.
+
+Bouton “Inscription Étudiant” mennen sou fòm enskripsyon.
+
+Section Mission / Vision / Philosophie.
+
+Formulaire de contact pou voye mesaj bay administrasyon an.
+
+Bouton d’aide “? Aide” – ou se la ou ye.
+</p>
+</li>
+</ul>
+
+<strong>Inscription Étudiant</strong>
+<p>
+    <ul>
+        <li>Objectif : donne acces a l'inscription aux etudiants.
+
+Champs obligatoires :
+
+Nom, Prénom, Sexe, Date et Lieu de Naissance
+
+Nationalité, NIF/CIN, Téléphone, Email
+
+Département (liste des 10 départements d’Haïti)
+
+Faculté, Vacation (Jour / Soir / Weekend)
+
+Photo (à importer)
+
+Fonctionnalités :
+
+Tous les champs sont enregistrés automatiquement dans le localStorage.
+
+Un ID unique est généré automatiquement.
+
+La date d’inscription est ajoutée automatiquement.
+
+Un bouton permet de télécharger automatiquement la fiche d’inscription en PDF après enregistrement.</li>
+    </ul>
+</p>
+
+
+<strong>Dashboard (Administrateur seulement)</strong>
+
+<p>
+    <ul>
+        <li>
+            Accès restreint : Nom d'utilisateur = admin | Mot de passe = admin1234
+
+Affiche la liste de tous les étudiants inscrits.
+
+Colonnes du tableau :
+
+ID unique, Nom, Prénom, Sexe, Date/Lieu de naissance, Nationalité, NIF/CIN, Photo, Téléphone, Email, Département, Faculté, Vacation
+
+Boutons disponibles :
+
+Ajouter Étudiant : Ouvre le formulaire d’inscription.
+
+Modifier : Permet de modifier les informations d’un étudiant.
+
+Supprimer : Envoie l’étudiant dans la corbeille.
+
+Télécharger PDF : Exporte la liste complète des étudiants (sans les colonnes d’actions).
+
+Mode Clair/Sombre : Pour basculer l’apparence.
+
+Bouton “Corbeille” : Voir les étudiants supprimés.
+
+Bouton Retour : Retourner à la page d’accueil.
+        </li>
+    </ul>
+</p>
+
+
+<strong> Corbeille</strong>
+<p>
+    <ul>
+        <li>
+            Fonction : Stocker temporairement les étudiants supprimés depuis le dashboard.
+
+Accès : Depuis le bouton "Corbeille" dans le dashboard.
+
+Fonctionnalités :
+
+Liste des étudiants supprimés.
+
+Pas de bouton “Modifier” ni “Récupérer” (cette fonction a été désactivée dans la dernière version).
+
+Section accessible seulement à l’administrateur.
+
+Messagerie (Contact / Message)
+Formulaire situé dans la page d’accueil (section Contact).
+
+Champs :
+
+Nom
+
+Email
+
+Message
+
+Fonctionnalités :
+
+Lorsque le formulaire est soumis :
+
+Le message est enregistré dans le localStorage.
+
+Une page “Message” permet à l’admin de consulter chaque message.
+
+Page "Message" (admin uniquement) :
+
+Affiche les messages reçus.
+
+Possibilité de répondre directement dans le message via un champ de réponse (la réponse est aussi sauvegardée).
+
+Bouton Supprimer qui envoie le message dans la corbeille de message.
+        </li>
+    </ul>
+</p>
+
+<strong> des messages</strong>
+
+<p>
+    <ul>
+        <li>Contient tous les messages supprimés.
+
+Aucun bouton de récupération ni suppression définitive.
+
+Accessible seulement à l’administrateur.
+
+Fonctionnalités Générales
+ Mode sombre / clair : Tous les écrans peuvent basculer entre mode sombre et clair.
+
+ Responsive Design : L’application est adaptée à toutes les tailles d’écran (ordinateur, tablette, téléphone).
+
+ Téléchargement PDF :
+
+Étudiant : fiche individuelle après inscription.
+
+Admin : liste globale des étudiants (sans les boutons d’action).
+
+PDF inclut : Logo, informations, date, et “Signature du Recteur”.
+
+ Support / Contact Technique
+Pour toute difficulté ou question technique, vous pouvez écrire à :
+
+Email : support@lousterold.ht ou contact@lousterold.ht
+
+Téléphone : +509 XX XX XX XX  
+</body></li>
+    </ul>
+</p>
+</html>

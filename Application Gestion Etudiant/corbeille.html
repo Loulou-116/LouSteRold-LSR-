@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Université LousteRold</title>
+  <link rel="stylesheet" href="styleCorbeil.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Corbeille - Université LousteRold</h1>
+    <button class="toggle-mode" onclick="toggleDarkMode()">Mode sombre</button>
+  </header>
+
+  <div class="container">
+    <button class="btn-retour" onclick="window.location.href='dashboard.html'">← Retour au Dashboard</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="corbeilleBody"></tbody>
+
+    <!---espas pou elev ki efase yo-->
+    </table>
+  </div>
+  <script src="scriptCorbeil.js"></script>
+</body>
+</html>

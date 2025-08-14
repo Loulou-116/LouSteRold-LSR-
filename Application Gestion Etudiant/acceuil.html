@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Université LouSteRold</title>
+<link rel="stylesheet" href="styleaccueil.css" />
+
+</head>
+  <body class="clair">
+
+  <header class="header">
+      <nav>
+        <img class="p" src="Image/logo.png" width="45px" height="45px"/>
+        <div class="toggle" id="toggle">
+          <li class="toggle-click"></li>
+          <li class="toggle-click"></li>
+          <li class="toggle-click"></li>
+        </div>
+        <div class="search">
+          <img src="Image/search.png" alt="" />
+          <input class="search-input" type="search" name="" id="" />
+        </div>
+        <ul>
+          <a id="link-1" href="acceuil.html">Accueil</a
+          ><a id="link-2" href="A propos.html">A propos</a
+          ><a id="link-3" href="inscription-3.html">Inscription</a
+          ><a id="link-4" href="index.html">Deconnexion</a>
+          <a id="link-5" href="Admin.html">Admin</a>
+        </ul>
+        <div class="theme">
+          <img class="search-Resp" src="Image/search.png" alt="" />
+          <img id="Theme-Sys" src="Image/lune.png" alt="" />
+        </div>
+      </nav>
+      <div class="Resposive" id="Resposive">
+        <nav>
+          <ul>
+            <a href="acceuil.html" >Accueil</a>
+            <hr />
+            <a href="A propos.html" >A propos</a>
+            <hr/>
+               <a href="inscription-3.html" >Inscription</a>
+            <hr/>
+             <a href="index.html" >Deconnexion</a>
+             <hr/>
+              <a href="Admin.html" >Admin</a>
+          </ul>
+        </nav>
+      </div>
+</header>
+
+
+<main>
+   <section id="accueil">
+    <img src="Image/ev-bg.jpg" class="active" />
+    <img src="Image/2.jpg" />
+    <img src="Image/1.jpg" />
+    <div id="accueil-content">
+
+      <h2 class="FF">BIENVENUE</h2>
+      <button id="btnInscriptionEtudiant">Inscrivez-Vous</button>
+    </div>
+  </section>
+<main>
+   </div>
+
+  <section class="mission" aria-labelledby="titre-mission">
+    <h2 id="titre-mission">Mission, Vision et Philosophie</h2>
+    <div class="contenu">
+      <div class="bloc" tabindex="0">
+        <h3>Mission</h3>
+        <p>
+          Offrir une formation supérieure de qualité, innovante et accessible, afin de préparer nos étudiants à relever les défis du monde moderne avec compétence et éthique.
+        </p>
+      </div>
+      <div class="bloc" tabindex="0">
+        <h3>Vision</h3>
+        <p>
+          Être une université de référence en Haïti, reconnue pour son excellence académique, son ouverture internationale et son engagement social.
+        </p>
+      </div>
+      <div class="bloc" tabindex="0">
+        <h3>Philosophie</h3>
+        <p>
+          Promouvoir le savoir, la creativite et la responsabilite individuelle dans un environnement inclusif et stimulant, pour former des citoyens engagés et éclairés.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+<!--Pati pou kontak-->
+ <div class="contact-form">
+    <h1>Contactez-nous</h1>
+    <form id="contactForm">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+    <div class="message" id="formMessage"></div>
+  </div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="Image/logo.png" alt="Université Lousterold Logo">
+      <p>Université LouSteRold<br>Apprendre . Analyser . Construire</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Liens Utiles</h4>
+      <ul>
+        <li><a href="acceuil.html">Accueil</a></li>
+          <li><a href="A propos.html">A propos</a></li>
+        <li><a href="inscription-3.html">Inscription</a></li>
+        <li><a href="dashboard.html">Admin</a></li>
+        <li><a href="acceuil.html">Contact</a></li>
+        <li><a href="Aide.html">Aide</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: universitelousterold@yahoo.fr</p>
+      <p>Téléphone: (+ 509) 3382-5927 / (+ 509) 4448-5980 / (+ 509) 4112-7837</p>
+      <p>Adresse: 112, Route, National #6, Cap-Haitien Limonade Haïti (W.I)</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Suivez-nous</h4>
+      <a href="#"><img src="Image/facebook.jpeg" alt="Facebook"></a>
+      <a href="#"><img src="Image/X.jpeg" alt="X"></a>
+      <a href="#"><img src="Image/youtube.jpeg" alt="YouTube"></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Université LouSteRold. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="scriptaccueil.js"></script>
+
+</body>
+</html>

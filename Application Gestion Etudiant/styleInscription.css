@@ -1,0 +1,97 @@
+
+ body {
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: #333;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #004080;
+      color: white;
+      padding: 10px;
+    }
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+     .container1 {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .btn-retour {
+      background-color: rgb(192, 0, 0);
+      color: #fff;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(#555);
+    }
+
+    body.dark-mode .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgb(#222);
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(#444);
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+    .form-row > div {
+      flex: 2;
+    }
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .submit-btn { background-color: #28a745; color: white; }
+    .pdf-btn { background-color: #007bff; color: white; }
+    .mode-toggle { background-color: #333; color: white; }
+    #pdfBtn { display: none; }
