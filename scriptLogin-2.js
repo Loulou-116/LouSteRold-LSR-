@@ -3,7 +3,7 @@
     const btnConnexion = document.getElementById('btnConnexion');
 
     btnConnexion.addEventListener('click', () => {
-      window.location.href = 'index.html';
+      window.location.href = 'index.HTML';
     });
 
     formInscription.addEventListener('submit', (e) => {
@@ -49,4 +49,5 @@
       setTimeout(() => {
         window.location.href = 'acceuil.html';
       }, 2000);
+
     });
