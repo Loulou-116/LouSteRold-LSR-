@@ -49,5 +49,4 @@
       setTimeout(() => {
         window.location.href = 'acceuil.html';
       }, 2000);
-
     });
