@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Université LouSteRold</title>
+  <link rel="stylesheet" href="styleDashboard.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+
+</head>
+<body data-theme="light">
+
+<header>
+  <img src="/Image/logo.png" alt="Logo">
+  <span><strong>Université LouSteRold</strong></span>
+  <p>Apprendre - Analyser - Construire</p>
+</header>
+
+
+<div class="container">
+  <div class="top-actions">
+    <button class="btn" type="button" onclick="toggleForm()">+ Ajouter Étudiant</button>
+   <button class="btn-pdf" type="button" onclick="downloadPDF()">Télécharger PDF</button>
+    <button class="btn" type="button" onclick="toggleTheme()"> Mode Clair/Sombre</button>
+    <button class="btn btn-danger" type="button" onclick="window.location='corbeille.html'">Corbeille</button>
+    <button class="btn-aller" onclick="window.location.href='message.html'">Message</button>
+
+  </div>
+
+  <!-- Formile a-->
+  <!-- Formilè Etudiant -->
+<form id="studentForm" style="display:none;">
+  <input type="hidden" id="studentId" name="studentId">
+
+  <label>Nom:</label>
+  <input type="text" id="nom" name="nom" required>
+
+  <label>Prénom:</label>
+  <input type="text" id="prenom" name="prenom" required>
+
+  <label>Sexe:</label>
+  <select id="sexe" name="sexe" required>
+    <option value="">--Choisir--</option>
+    <option value="M">Masculin</option>
+    <option value="F">Féminin</option>
+  </select>
+
+  <label>Date de naissance:</label>
+  <input type="date" id="naissance" name="naissance" required>
+
+  <label>Lieu de naissance:</label>
+  <input type="text" id="lieu" name="lieu" required>
+
+  <label>Nationalité:</label>
+  <input type="text" id="nationalite" name="nationalite" required>
+
+  <label>NIF/CIN:</label>
+  <input type="text" id="nif" name="nif" required>
+
+  <label>Téléphone:</label>
+  <input type="tel" id="tel" name="tel" required>
+
+  <label>Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label>Département:</label>
+  <select id="departement" name="departement" required>
+    <option value="">--Choisir--</option>
+    <option value="Artibonite">Artibonite</option>
+    <option value="Centre">Centre</option>
+    <option value="Grand'Anse">Grand'Anse</option>
+    <option value="Nippes">Nippes</option>
+    <option value="Nord">Nord</option>
+    <option value="Nord-Est">Nord-Est</option>
+    <option value="Nord-Ouest">Nord-Ouest</option>
+    <option value="Ouest">Ouest</option>
+    <option value="Sud">Sud</option>
+    <option value="Sud-Est">Sud-Est</option>
+  </select>
+
+  <label>Faculté:</label>
+  <input type="text" id="faculte" name="faculte" required>
+
+  <label>Vacation:</label>
+  <input type="text" id="vacation" name="vacation" required>
+
+  <button class="E" type="submit">Enregistrer</button>
+</form>
+
+<!-- Tableau des étudiants -->
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th><th>Nom</th><th>Prénom</th><th>Sexe</th>
+      <th>Naissance</th><th>Lieu</th><th>Nationalité</th><th>NIF</th>
+      <th>Téléphone</th><th>Email</th><th>Département</th><th>Faculté</th>
+      <th>Vacation</th><th>Date Inscription</th><th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="studentTable"></tbody>
+</table>
+
+</div>
+
+<script src="scriptDashboard.js"></script>
+</body>
+</html>

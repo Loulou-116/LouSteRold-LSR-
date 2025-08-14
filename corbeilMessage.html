@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Université LousteRold</title>
+  <link rel="stylesheet" href="styleCorbeilMessage.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h2> Corbeille - Messages Supprimés</h2>
+    <div>
+      <button onclick="toggleMode()" class="btn-mode">Mode sombre</button>
+      <button onclick="location.href='message.html'" class="btn-retour">⬅ Retour Messages</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <table id="corbeilleTable">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="scriptCorbeilMessage.js"></script>
+</body>
+</html>

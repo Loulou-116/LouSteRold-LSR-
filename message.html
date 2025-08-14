@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Université LouSteRold</title>
+  <link rel="stylesheet" href="styleMessage.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+<body>
+  <header>
+    <h2>Messages Utilisateurs</h2>
+    <div>
+      <button onclick="toggleMode()" class="btn-mode">Mode</button>
+      <button onclick="location.href='corbeilMessage.html'" class="btn-corbeille"> Corbeille</button>
+      <button onclick="location.href='dashboard.html'" class="btn-retour">⬅ Retour Dashboard</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <table id="messageTable">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="scriptMessage.js"></script>
+</body>
+</html>

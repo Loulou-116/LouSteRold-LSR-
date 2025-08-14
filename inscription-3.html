@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Université LouSteRold</title>
+  <link rel="stylesheet" href="styleInscription.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+<body class="b">
+
+<header>
+  <img src="/Image/logo.png" alt="Université LousteRold Logo">
+  <h1>Université LouSteRold - Formulaire d'inscription</h1>
+</header>
+
+<div class="container1">
+    <button class="btn-retour" onclick="window.location.href='acceuil.html'">X</button>
+
+<div class="container" id="formulaireContainer">
+  <form id="inscriptionForm">
+    <div class="form-row">
+      <div>
+        <label>Nom</label>
+        <input type="text" id="nom" required>
+      </div>
+      <div>
+        <label>Prénom</label>
+        <input type="text" id="prenom" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label>Sexe</label>
+        <select id="sexe" required>
+          <option value="">Sélectionner</option>
+          <option value="Masculin">Masculin</option>
+          <option value="Féminin">Féminin</option>
+        </select>
+      </div>
+      <div>
+        <label>Date de naissance</label>
+        <input type="date" id="dateNaissance" required>
+      </div>
+    </div>
+
+    <label>Lieu de naissance</label>
+    <input type="text" id="lieuNaissance" required>
+
+    <label>Nationalité</label>
+    <input type="text" id="nationalite" required>
+
+    <label>NIF/CIN</label>
+    <input type="text" id="nif" required>
+
+    <label>Numéro de téléphone</label>
+    <input type="tel" id="telephone" required>
+
+    <label>Email</label>
+    <input type="email" id="email" required>
+
+    <label>Département</label>
+    <select id="departement" required>
+      <option value="">Choisir...</option>
+      <option>Artibonite</option><option>Centre</option><option>Grand'Anse</option>
+      <option>Nippes</option><option>Nord</option><option>Nord-Est</option>
+      <option>Nord-Ouest</option><option>Ouest</option><option>Sud</option><option>Sud-Est</option>
+    </select>
+    <label>Faculté</label>
+    <select id="faculte" required>
+      <option>Sciences Informatiques</option><option>Sciences Administratives</option><option>Sciences Agronomie</option>
+      <option>Droit</option><option>Génie Civil</option><option>Sciences Comptables</option>
+      <option>Beaux-Arts</option><option>Médecine Générale</option><option>Sciences Infirmières</option><option>Génie Électromécanique</option>
+    </select>
+
+    <label>Vacation</label>
+    <select id="vacation" required>
+      <option value="">Chosir...</option>
+      <option>Matin</option>
+      <option>Soir</option>
+      <option>Week-end</option>
+    </select>
+
+    <div class="buttons">
+      <button type="submit" class="submit-btn">Valider l'inscription</button>
+      <button type="button" id="pdfBtn" class="pdf-btn" onclick="downloadPDF()">Télécharger Fiche PDF</button>
+      <button type="button" class="mode-toggle" onclick="toggleMode()">Mode Clair/Sombre</button>
+    </div>
+  </form>
+</div>
+
+<script src="scriptInscription.js"></script>
+
+</body>
+</html>

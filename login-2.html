@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universite LouSteRold</title>
+  <link rel="stylesheet" href="styleLogin-2.css"/>
+ 
+<body>
+  <div class="container">
+    <h1>Créer un compte</h1>
+    <form id="formInscription">
+      <input type="text" id="nom" placeholder="Votre nom" required autocomplete="family-name" />
+      <input type="text" id="prenom" placeholder="Votre prénom" required autocomplete="given-name" />
+      <input type="email" id="email" placeholder="Votre email" required autocomplete="email" />
+      <input type="password" id="motdepasse" placeholder="Mot de passe" required autocomplete="new-password" />
+      <button type="submit">S'inscrire</button>
+    </form>
+    <div id="message"></div>
+    <p>Vous avez déjà un compte ?</p> <div class="lien-connexion" id="btnConnexion">Connectez-vous</div>
+  </div>
+
+  <script src="scriptLogin-2.js"></script>
+</body>
+</html>
