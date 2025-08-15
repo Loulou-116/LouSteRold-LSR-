@@ -6,7 +6,7 @@ const ADMIN_PASS = "admin1234";
   const u = prompt("Nom utilisateur:");
   const p = prompt("Mot de passe:");
   if (u !== ADMIN_USER || p !== ADMIN_PASS) {
-    alert("Accès refusé !");
+    alert("Accès non accorder !");
     location.href = "index.html";
   } else {
     localStorage.setItem("adminLogged", "Yes");
@@ -150,3 +150,4 @@ function downloadPDF() {
 
 
 renderTable();
+
